@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Weapon list</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <br />
+  <ion-button (click)="insertWeapon()" expand="block">Add Weapon</ion-button>
+
+  <ion-card *ngFor="let w of weapons" class="item">
+    <ion-card-header>
+      <ion-card-title>{{w.material}} {{w.type}}</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content class="item2">
+      Might: {{w.might}}<br /> 
+      Range: {{w.weaponRange}}
+    </ion-card-content>
+    <ion-item>
+      <!-- <ion-icon (click)="updateWeapon(w.id)" name="create" slot="end"></ion-icon> -->
+      <ion-icon (click)="deleteWeapon(w.id)" name="trash" slot="end"></ion-icon>
+    </ion-item>
+  </ion-card>
+
+</ion-content>

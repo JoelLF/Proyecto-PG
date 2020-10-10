@@ -26,10 +26,10 @@ CREATE TABLE `weapons` (
   `id` int NOT NULL AUTO_INCREMENT,
   `material` varchar(45) NOT NULL,
   `might` int NOT NULL,
-  `range` int NOT NULL,
+  `weapon_range` int NOT NULL,
   `type` varchar(45) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7001 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7005 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -38,7 +38,7 @@ CREATE TABLE `weapons` (
 
 LOCK TABLES `weapons` WRITE;
 /*!40000 ALTER TABLE `weapons` DISABLE KEYS */;
-INSERT INTO `weapons` VALUES (1,'iron',10,1,'sword'),(2,'steel',12,1,'sword'),(3,'silver',14,1,'sword'),(4,'iron',12,1,'axe'),(5,'steel',14,1,'axe'),(6,'silver',16,1,'axe'),(7,'iron',9,1,'lance'),(8,'steel',11,1,'lance'),(9,'silver',13,1,'lance'),(10,'fire',8,2,'tome');
+INSERT INTO `weapons` VALUES (1,'Iron',10,1,'Sword'),(2,'Steel',12,1,'Sword'),(3,'Silver',14,1,'Sword'),(4,'Iron',12,1,'Axe'),(5,'Steel',14,1,'Axe'),(6,'Silver',16,1,'Axe'),(7,'Iron',9,1,'Lance'),(8,'Steel',11,1,'Lance'),(9,'Silver',13,1,'Lance'),(10,'Tome',8,2,'Fire');
 /*!40000 ALTER TABLE `weapons` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -51,4 +51,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-10-08 16:44:28
+-- Dump completed on 2020-10-10 18:54:53
